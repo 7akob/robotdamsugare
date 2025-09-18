@@ -10,6 +10,9 @@ public class CarBrain : Agent
     public Transform Target;
     float PreviousDistance;
 
+    private GameObject[] cones;
+    private Vector3[] coneStartPositions;
+
 
     public override void OnEpisodeBegin()
     {
@@ -63,6 +66,15 @@ public class CarBrain : Agent
     {
         startPosition = transform.position;
         carController = GetComponent<PrometeoCarController>();
+
+        cones = GameObject.FindGameObjectsWithTag("Cone");
+        coneStartPositions = new Vector3[cones.Length];
+
+        for (int i = 0; i < cones.Length; i++)
+        {
+            coneStartPositions[i] = cones[i].transform.position;
+        }
+
         Reset();
     }
 
@@ -76,12 +88,18 @@ public class CarBrain : Agent
     {
         transform.position = startPosition;
         transform.rotation = Quaternion.identity;
+    
 
         var rb = GetComponent<Rigidbody>();
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
+        }
+
+        for (int i = 0; i < cones.Length; i++)
+        {
+            cones[i].transform.position = coneStartPositions[i];
         }
     }
 

@@ -9,15 +9,42 @@
                 "auxillary_file_paths": [
                     "results\\Stage2\\CarBrain\\CarBrain-32186.pt"
                 ]
+            },
+            {
+                "steps": 134936,
+                "file_path": "results\\Stage2\\CarBrain\\CarBrain-134936.onnx",
+                "reward": null,
+                "creation_time": 1758199775.6013734,
+                "auxillary_file_paths": [
+                    "results\\Stage2\\CarBrain\\CarBrain-134936.pt"
+                ]
+            },
+            {
+                "steps": 499982,
+                "file_path": "results\\Stage2\\CarBrain\\CarBrain-499982.onnx",
+                "reward": 2.2414693246175954,
+                "creation_time": 1758201762.8220305,
+                "auxillary_file_paths": [
+                    "results\\Stage2\\CarBrain\\CarBrain-499982.pt"
+                ]
+            },
+            {
+                "steps": 500046,
+                "file_path": "results\\Stage2\\CarBrain\\CarBrain-500046.onnx",
+                "reward": 2.2414693246175954,
+                "creation_time": 1758201762.8591192,
+                "auxillary_file_paths": [
+                    "results\\Stage2\\CarBrain\\CarBrain-500046.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 32186,
+            "steps": 500046,
             "file_path": "results\\Stage2\\CarBrain.onnx",
-            "reward": 0.6899794773621992,
-            "creation_time": 1758196352.0339103,
+            "reward": 2.2414693246175954,
+            "creation_time": 1758201762.8591192,
             "auxillary_file_paths": [
-                "results\\Stage2\\CarBrain\\CarBrain-32186.pt"
+                "results\\Stage2\\CarBrain\\CarBrain-500046.pt"
             ]
         }
     },
