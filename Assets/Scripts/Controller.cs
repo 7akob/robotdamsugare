@@ -23,7 +23,9 @@ public class Controller : Agent
         if(PreviousDistance != 0)
             AddReward(Delta * 0.01f);
 
-        AddReward(-0.001f);
+        PreviousDistance = CurrentDistance;
+
+        AddReward(-0.0001f);
 
         var action = actions.DiscreteActions;
         if (action[0] == 1)

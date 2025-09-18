@@ -12772,7 +12772,7 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
+  MaxStep: 30000
   moveSpeed: 3
   rotSpeed: 90
   Dust: {fileID: 2037828300}
